@@ -1,0 +1,23 @@
+
+{                                                                                
+  "name": "be.eloistree.digitalscoreandclock",                              
+  "displayName": "Digital Score And Clock",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "Some digit to make some score and click element in your game.",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples" : [],     
+  "author" : {
+"name":"Eloi Stree",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://github.com/EloiStree/2023_02_17_DigitalScoreAndClock.git",
+"footprint":"",
+"revision":""},     
+  "category": "Script"                   
+} 

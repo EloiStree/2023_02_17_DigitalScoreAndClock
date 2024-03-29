@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2017844854965617978}
   - component: {fileID: 2017844854965617972}
   m_Layer: 0
-  m_Name: Time Countdown Timer MM_SS
+  m_Name: Time Timer MM_SS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,7 +97,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 48823602693590403, guid: b12f5c0a8d47d4a49920e497ee9dd342, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.431
+      value: 0.7155
       objectReference: {fileID: 0}
     - target: {fileID: 48823602693590403, guid: b12f5c0a8d47d4a49920e497ee9dd342, type: 3}
       propertyPath: m_LocalPosition.y
@@ -222,7 +222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 48823602693590403, guid: b12f5c0a8d47d4a49920e497ee9dd342, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.7155
       objectReference: {fileID: 0}
     - target: {fileID: 48823602693590403, guid: b12f5c0a8d47d4a49920e497ee9dd342, type: 3}
       propertyPath: m_LocalPosition.y

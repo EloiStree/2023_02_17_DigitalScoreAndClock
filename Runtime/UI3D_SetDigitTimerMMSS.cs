@@ -25,5 +25,8 @@ public class UI3D_SetDigitTimerMMSS : MonoBehaviour
         m_leftPartMM.SetWithNumber(m);
         m_rightPartSS.SetWithNumber(s);
     }
-
+    public void SetWithSeconds(float secondsOfTimer)
+    {
+        SetWithSeconds((int)secondsOfTimer);
+    }
 }

@@ -106,6 +106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5089335055242154376}
+  - component: {fileID: 4510546315958180739}
   m_Layer: 0
   m_Name: Display Light Part
   m_TagString: Untagged
@@ -129,6 +130,22 @@ Transform:
   m_Father: {fileID: 5089335055906992442}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4510546315958180739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5089335055242154377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b6ada651302f945a1639387f8609ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_targets:
+  - {fileID: 1609380914833265405}
+  - {fileID: 1445147049544914988}
+  m_colorReceived: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &5089335055906992440
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,6 +156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5089335055906992442}
   - component: {fileID: 5089335055906992443}
+  - component: {fileID: 964820721084996950}
   m_Layer: 0
   m_Name: 'Digit Prefab '
   m_TagString: Untagged
@@ -282,6 +300,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+--- !u!114 &964820721084996950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5089335055906992440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c634585531453cc41a8328caf2b56865, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_colorChoosed: {r: 1, g: 0, b: 0, a: 1}
+  m_onColorChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4510546315958180739}
+        m_TargetAssemblyTypeName: ColorToRendererMono, be.eloistree.generaltoolbox
+        m_MethodName: PushColor
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5089335056584439353
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,9 +680,120 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -4120397109267391187, guid: 919479b90588f6a44b4a065856a42054, type: 3}
   m_PrefabInstance: {fileID: 5089335056586031093}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3231365746369567705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31978110523187928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c634585531453cc41a8328caf2b56865, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_colorChoosed: {r: 1, g: 0, b: 0, a: 1}
+  m_onColorChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5664194853091552238}
+        m_TargetAssemblyTypeName: ColorToRendererMono, be.eloistree.generaltoolbox
+        m_MethodName: PushColor
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5664194853091552238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31978110523187928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b6ada651302f945a1639387f8609ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_targets:
+  - {fileID: 8265998793607288458}
+  m_colorReceived: {r: 1, g: 0, b: 0, a: 1}
+--- !u!23 &273840450756235836 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -4220977634165264951, guid: 919479b90588f6a44b4a065856a42054, type: 3}
+  m_PrefabInstance: {fileID: 5089335056586031093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1062304408479862292 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5196841158122582497, guid: 919479b90588f6a44b4a065856a42054, type: 3}
+  m_PrefabInstance: {fileID: 5089335056586031093}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1224960000337998246 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6223726082302266963, guid: 919479b90588f6a44b4a065856a42054, type: 3}
+  m_PrefabInstance: {fileID: 5089335056586031093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1064017068462987005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224960000337998246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c634585531453cc41a8328caf2b56865, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_colorChoosed: {r: 1, g: 0, b: 0, a: 1}
+  m_onColorChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2223175047174632586}
+        m_TargetAssemblyTypeName: ColorToRendererMono, be.eloistree.generaltoolbox
+        m_MethodName: PushColor
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2223175047174632586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224960000337998246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b6ada651302f945a1639387f8609ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_targets:
+  - {fileID: 1609380914833265405}
+  m_colorReceived: {r: 1, g: 0, b: 0, a: 1}
+--- !u!23 &1445147049544914988 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -3265458475708930087, guid: 919479b90588f6a44b4a065856a42054, type: 3}
+  m_PrefabInstance: {fileID: 5089335056586031093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1609380914833265405 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5833665849976597768, guid: 919479b90588f6a44b4a065856a42054, type: 3}
+  m_PrefabInstance: {fileID: 5089335056586031093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &2875213406465282233 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -2214016089018503348, guid: 919479b90588f6a44b4a065856a42054, type: 3}
   m_PrefabInstance: {fileID: 5089335056586031093}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &3303573502723787075 stripped
@@ -644,6 +801,49 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -1479338074176604490, guid: 919479b90588f6a44b4a065856a42054, type: 3}
   m_PrefabInstance: {fileID: 5089335056586031093}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8424478678301231050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3303573502723787075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b6ada651302f945a1639387f8609ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_targets:
+  - {fileID: 1445147049544914988}
+  m_colorReceived: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &8684115975213783851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3303573502723787075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c634585531453cc41a8328caf2b56865, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_colorChoosed: {r: 1, g: 0, b: 0, a: 1}
+  m_onColorChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8424478678301231050}
+        m_TargetAssemblyTypeName: ColorToRendererMono, be.eloistree.generaltoolbox
+        m_MethodName: PushColor
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &4695647172316485662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 919479b90588f6a44b4a065856a42054, type: 3}
@@ -654,18 +854,200 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -8854268319521279232, guid: 919479b90588f6a44b4a065856a42054, type: 3}
   m_PrefabInstance: {fileID: 5089335056586031093}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3771015786891545452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4881799350280310005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c634585531453cc41a8328caf2b56865, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_colorChoosed: {r: 1, g: 0, b: 0, a: 1}
+  m_onColorChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6027769624255732819}
+        m_TargetAssemblyTypeName: ColorToRendererMono, be.eloistree.generaltoolbox
+        m_MethodName: PushColor
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6027769624255732819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4881799350280310005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b6ada651302f945a1639387f8609ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_targets:
+  - {fileID: 1062304408479862292}
+  m_colorReceived: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &7055563801061106215 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6392131099197530670, guid: 919479b90588f6a44b4a065856a42054, type: 3}
   m_PrefabInstance: {fileID: 5089335056586031093}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1013132400964032002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7055563801061106215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c634585531453cc41a8328caf2b56865, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_colorChoosed: {r: 1, g: 0, b: 0, a: 1}
+  m_onColorChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2853141278355140447}
+        m_TargetAssemblyTypeName: ColorToRendererMono, be.eloistree.generaltoolbox
+        m_MethodName: PushColor
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2853141278355140447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7055563801061106215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b6ada651302f945a1639387f8609ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_targets:
+  - {fileID: 7522344545348490613}
+  m_colorReceived: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &7494290082099829270 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5863156357417687581, guid: 919479b90588f6a44b4a065856a42054, type: 3}
   m_PrefabInstance: {fileID: 5089335056586031093}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1513223810731985079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7494290082099829270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c634585531453cc41a8328caf2b56865, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_colorChoosed: {r: 1, g: 0, b: 0, a: 1}
+  m_onColorChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8561550685005450745}
+        m_TargetAssemblyTypeName: ColorToRendererMono, be.eloistree.generaltoolbox
+        m_MethodName: PushColor
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8561550685005450745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7494290082099829270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b6ada651302f945a1639387f8609ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_targets:
+  - {fileID: 273840450756235836}
+  m_colorReceived: {r: 1, g: 0, b: 0, a: 1}
+--- !u!23 &7522344545348490613 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3369906136111688320, guid: 919479b90588f6a44b4a065856a42054, type: 3}
+  m_PrefabInstance: {fileID: 5089335056586031093}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8030045815712157189 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6210315060537839120, guid: 919479b90588f6a44b4a065856a42054, type: 3}
+  m_PrefabInstance: {fileID: 5089335056586031093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &356995774002817367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8030045815712157189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c634585531453cc41a8328caf2b56865, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_colorChoosed: {r: 1, g: 0, b: 0, a: 1}
+  m_onColorChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2651876222259185011}
+        m_TargetAssemblyTypeName: ColorToRendererMono, be.eloistree.generaltoolbox
+        m_MethodName: PushColor
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2651876222259185011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8030045815712157189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b6ada651302f945a1639387f8609ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_targets:
+  - {fileID: 2875213406465282233}
+  m_colorReceived: {r: 1, g: 0, b: 0, a: 1}
+--- !u!23 &8265998793607288458 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3753268013710027135, guid: 919479b90588f6a44b4a065856a42054, type: 3}
   m_PrefabInstance: {fileID: 5089335056586031093}
   m_PrefabAsset: {fileID: 0}
