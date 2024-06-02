@@ -14,7 +14,7 @@ public class UI3D_SetDigitClockHHMM : MonoBehaviour
         SetWithCurrentDate();
     }
 
-    private void SetToDate(DateTime now)
+    public void SetToDate(DateTime now)
     {
         int hour = now.Hour;
         int minute = now.Minute;
@@ -22,8 +22,15 @@ public class UI3D_SetDigitClockHHMM : MonoBehaviour
         m_rightPartMM.SetWithNumber(minute);
     }
     [ContextMenu("SetWithCurrentDate")]
-    public void SetWithCurrentDate() {
+    public void SetWithCurrentDate()
+    {
 
         SetToDate(DateTime.Now);
+    }
+    [ContextMenu("SetWithCurrentDateUTC")]
+    public void SetWithCurrentDateUTC()
+    {
+
+        SetToDate(DateTime.UtcNow);
     }
 }

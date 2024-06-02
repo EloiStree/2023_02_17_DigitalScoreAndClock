@@ -1,9 +1,7 @@
 {
     "name": "be.eloistree.digitalscoreandclock",
     "rootNamespace": "",
-    "references": [
-        "be.eloistree.generaltoolbox"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
