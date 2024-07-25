@@ -94,6 +94,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Square Double Digit (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 48823602693590402, guid: b12f5c0a8d47d4a49920e497ee9dd342,
+        type: 3}
+      propertyPath: m_number
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 48823602693590403, guid: b12f5c0a8d47d4a49920e497ee9dd342,
         type: 3}
       propertyPath: m_RootOrder
@@ -102,7 +107,7 @@ PrefabInstance:
     - target: {fileID: 48823602693590403, guid: b12f5c0a8d47d4a49920e497ee9dd342,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.7155
+      value: 0.7155
       objectReference: {fileID: 0}
     - target: {fileID: 48823602693590403, guid: b12f5c0a8d47d4a49920e497ee9dd342,
         type: 3}
@@ -263,7 +268,7 @@ PrefabInstance:
     - target: {fileID: 48823602693590403, guid: b12f5c0a8d47d4a49920e497ee9dd342,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.7155
+      value: -0.7155
       objectReference: {fileID: 0}
     - target: {fileID: 48823602693590403, guid: b12f5c0a8d47d4a49920e497ee9dd342,
         type: 3}
