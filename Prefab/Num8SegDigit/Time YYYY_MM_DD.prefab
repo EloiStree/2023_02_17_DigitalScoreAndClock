@@ -451,10 +451,70 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1823711213205901384, guid: ffa4709837d40544c81884c0ef2d21a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179314164967752795, guid: ffa4709837d40544c81884c0ef2d21a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3659097870131523971, guid: ffa4709837d40544c81884c0ef2d21a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855302371476935352, guid: ffa4709837d40544c81884c0ef2d21a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344104555842114848, guid: ffa4709837d40544c81884c0ef2d21a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001244278390536701, guid: ffa4709837d40544c81884c0ef2d21a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6069118231815761390, guid: ffa4709837d40544c81884c0ef2d21a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536747070412966221, guid: ffa4709837d40544c81884c0ef2d21a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6757182658098486622, guid: ffa4709837d40544c81884c0ef2d21a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6833094639926828395, guid: ffa4709837d40544c81884c0ef2d21a5,
         type: 3}
       propertyPath: m_Name
       value: Square Four Digit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8145185886727937966, guid: ffa4709837d40544c81884c0ef2d21a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8525015423760530581, guid: ffa4709837d40544c81884c0ef2d21a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9189425007032433421, guid: ffa4709837d40544c81884c0ef2d21a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
