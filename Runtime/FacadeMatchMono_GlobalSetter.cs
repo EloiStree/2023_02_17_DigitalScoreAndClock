@@ -33,8 +33,9 @@ public class FacadeMatchMono_GlobalSetter : MonoBehaviour
 
     private void OnValidate()
     {
-        if (m_useValidateToRefresh)
-            RefreshAll();
+        if(!Application.isPlaying)
+            if (m_useValidateToRefresh)
+                RefreshAll();
     }
 
     public void RefreshAll() { 

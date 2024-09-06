@@ -1,7 +1,7 @@
 
 {                                                                   
-            "name": "be.eloistree.digitalscoreandclockEditor",          
-    "references": ["be.eloistree.digitalscoreandclock"
+            "name": "be.elab.digitalscoreandclockEditor",          
+    "references": ["be.elab.digitalscoreandclock"
 ],                                                              
     "optionalUnityReferences": [],                                  
     "includePlatforms": [                                           
