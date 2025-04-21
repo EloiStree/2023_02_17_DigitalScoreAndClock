@@ -9,6 +9,7 @@ public class UI3D_CubeSizeToDigitSizeMono : MonoBehaviour
     public float m_digitHeightSize = 0.018f;
     public float m_digitWidthSize = 0.012f;
     public float m_digitDepthSize = 0.001f;
+    public float m_multiplicator = 1f;
 
 
     private void Reset()
@@ -29,7 +30,6 @@ public class UI3D_CubeSizeToDigitSizeMono : MonoBehaviour
     public void RefreshAsLocalScale()
     {
         if(m_toAffect != null)
-        m_toAffect.localScale = new Vector3(m_digitWidthSize, m_digitHeightSize, m_digitDepthSize);
+        m_toAffect.localScale = new Vector3(m_digitWidthSize, m_digitHeightSize, m_digitDepthSize)* m_multiplicator;
     }
-    
 }

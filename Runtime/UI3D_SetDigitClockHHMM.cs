@@ -9,10 +9,7 @@ public class UI3D_SetDigitClockHHMM : MonoBehaviour
     public UI3D_SetClockNumber m_rightPartMM;
 
 
-    public void OnValidate()
-    {
-        SetWithCurrentDate();
-    }
+
 
     public void SetToDate(DateTime now)
     {
