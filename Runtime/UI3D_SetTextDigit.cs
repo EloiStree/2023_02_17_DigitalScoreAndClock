@@ -87,7 +87,7 @@ public class UI3D_SetTextDigit :MonoBehaviour{
     }
 
 
-    private void OnValidate()
+        private void OnValidate()
     {
         RefreshUI();
     }
